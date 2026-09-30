@@ -22,5 +22,7 @@ const counterElement = document.getElementById("counter")!;
 
 button.addEventListener("click", () => {
   // This looks like to a good place to add some logic!
-  console.log("I have these thingies:", button, counterElement, counter);
+  counter += Math.random();
+  // Update the DOM element with the new value
+  counterElement.textContent = counter.toString();
 });
